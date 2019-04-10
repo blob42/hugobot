@@ -1,0 +1,42 @@
+version: "2.2"
+
+volumes:
+    js-deps:
+    build:
+    sqlite-db:
+
+services:
+    bot:
+        image: hugobot/hugobot
+        build: .
+
+        volumes:
+            - path_to_website:/website
+            - $PWD:/hugobot
+            - sqlite-db:/db
+
+        environment:
+            - BUILD_DIR=/build
+
+        restart: on-failure
+
+        ports:
+            - "8734:8734"
+
+        working_dir: /hugobot
+
+
+    sqlite-web:
+        image: hugobot/sqlite-web
+        build:
+            context: .
+            dockerfile: ./Dockerfile-sqliteweb
+        ports:
+            - "8080"
+        volumes:
+            - sqlite-db:/db
+
+        environment:
+            - SQLITE_DATABASE=hugobot.sqlite
+            - SQLITE_WEB_PASSWORD=hugobot
+
