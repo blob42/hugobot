@@ -14,7 +14,7 @@ driven websites. It has the following features:
   `handlers/handlers.go`).
 - Hugobot automatically fetch new posts from the feeds you defined
 - It runs periodically to download new posts in the defined feeds.
-- Everything is saved on an sqlite
+- Storage is done with sqlite. 
 - The scheduler can handle any number of tasks and uses leveldb for
   caching/resuming jobs.
 
