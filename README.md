@@ -8,7 +8,8 @@ driven websites. It has the following features:
 
 ## Data fetch
 
-- Add feeds to the bot in the `feeds` sqlite table
+- Use the `feeds` table to  register feeds that will periodically fetched stored
+  and exported into the hugo project.
 - Currently handles these types of feeds: `RSS`, `Github Releases`, `Newsletters`
 - Define your own feed types by implementing the `JobHandler` interface (see
   `handlers/handlers.go`).
@@ -25,21 +26,39 @@ driven websites. It has the following features:
 - It can export `markdwon` files or `json/toml` data files
 - All fields in the exported files can be customized
 - You can define custom output formats by using the `FormatHandler` interface.
+- You can register custom filters and post processing on exports to avoid 
+changing the raw data stored in the db.
+- You can force export of content through the CLI
 
 
 ## API
 
+- Uses `gin-gonic`.
+
 - *hugobot* also includes a webserver API that can be used with Hugo [Data
   Driven Mode][data-driven].
 
-- WIP: Insert and query data 
+- Insert and query data from the db. This is still a WIP, you can easily 
+  add the missing code on the API side to automate adding/querying data
+  from the DB. 
 
 - An example usage is the automated generation of Bitcoin addresses for new
   articles on [bitcointechweekly.com][btw-btc]
 
+## Other
+
+- Some commands are available through the CLI, you can add your own custom
+  commands.
+
 ## Sqliteweb interface
 
 - See Docker files
+
+## First time usage
+
+- The database is automatically generated the first time you run the program.
+  You can add your feeds straight into the sqlite db using your favorite sqlite GUI
+  or the provided web gui in the docker-compose file.
 
 
 [data-driven]:https://gohugo.io/templates/data-templates/#data-driven-content
