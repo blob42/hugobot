@@ -23,7 +23,7 @@ driven websites. It has the following features:
 ## Hugo export
 
 - Data is automatically exported to the configured Hugo website path.
-- It can export `markdwon` files or `json/toml` data files
+- It can export `markdown` files or `json/toml` data files
 - All fields in the exported files can be customized
 - You can define custom output formats by using the `FormatHandler` interface.
 - You can register custom filters and post processing on exports to avoid 
