@@ -59,7 +59,19 @@ changing the raw data stored in the db.
   You can add your feeds straight into the sqlite db using your favorite sqlite GUI
   or the provided web gui in the docker-compose file.
 
+## Contribution
+
+- PRs welcome, current priority is to add tests.
+- Check the [TODO](#TODO) section.
+
+## TODO:
+
+- Add tests.
+- Handle more feed formats: `tweets`, `mailing-list emails` ...
+- TLS support in the API (not a priority, can be done with a reverse proxy).
+
 
 [data-driven]:https://gohugo.io/templates/data-templates/#data-driven-content
 [btw-btc]:https://bitcointechweekly.com/btc/3Jv15g4G5LDnBJPDh1e2ja8NPnADzMxhVh
 [hugo]:https://gohugo.io
+
