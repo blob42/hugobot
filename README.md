@@ -8,14 +8,13 @@ driven websites. It has the following features:
 
 ## Data fetch
 
-- Use the `feeds` table to  register feeds that will periodically fetched stored
+- Use the `feeds` table to  register feeds that will periodically get fetched, stored
   and exported into the hugo project.
 - Currently handles these types of feeds: `RSS`, `Github Releases`, `Newsletters`
 - Define your own feed types by implementing the `JobHandler` interface (see
   `handlers/handlers.go`).
-- Hugobot automatically fetch new posts from the feeds you defined
-- It runs periodically to download new posts in the defined feeds.
-- Storage is done with sqlite. 
+- Hugobot automatically fetches new posts from the registered.
+- Sqlite is used for storage. `feeds` and `posts` tables.
 - The scheduler can handle any number of tasks and uses leveldb for
   caching/resuming jobs.
 
@@ -23,12 +22,12 @@ driven websites. It has the following features:
 ## Hugo export
 
 - Data is automatically exported to the configured Hugo website path.
-- It can export `markdown` files or `json/toml` data files
-- All fields in the exported files can be customized
+- It can export `markdown` files or `json/toml` data files.
+- All fields in the exported files can be customized.
 - You can define custom output formats by using the `FormatHandler` interface.
-- You can register custom filters and post processing on exports to avoid 
+- You can register custom filters and post processing on exported posts to avoid 
 changing the raw data stored in the db.
-- You can force export of content through the CLI
+- You can force data export using the CLI.
 
 
 ## API
@@ -47,8 +46,8 @@ changing the raw data stored in the db.
 
 ## Other
 
-- Some commands are available through the CLI, you can add your own custom
-  commands.
+- Some commands are available through the CLI (`github.com/urfave/cli`), you
+  can add your own custom commands.
 
 ## Sqliteweb interface
 
