@@ -1,48 +1,36 @@
-**MIRRORED FROM**: https://git.sp4ke.com/sp4ke/hugobot
+**MIRRORED FROM**: https://git.blob42.xyz/sp4ke/hugobot
 
 # HUGOBOT
 
-*hugobot* is a an automated content fetch and aggregation bot for [Hugo][hugo] data
-driven websites. It has the following features:
+*hugobot* is a bot that automates the fetching and
+aggregation of content for [Hugo][hugo] data-driven
+websites. It has the following features:
 
 
 ## Data fetch
 
-- Use the `feeds` table to  register feeds that will periodically get fetched, stored
-  and exported into the hugo project.
-- Currently handles these types of feeds: `RSS`, `Github Releases`, `Newsletters`
-- Define your own feed types by implementing the `JobHandler` interface (see
-  `handlers/handlers.go`).
-- Hugobot automatically fetches new posts from the registered.
-- Sqlite is used for storage. `feeds` and `posts` tables.
-- The scheduler can handle any number of tasks and uses leveldb for
-  caching/resuming jobs.
-
+- Use the `feeds` table to register feeds that will be fetched periodically.
+- Currently, it can handle these types of feeds: `RSS`, `Github Releases`, `Newsletters`
+- To define your own feed types, implement the `JobHandler` interface (see `handlers/handlers.go`).
+- Hugobot automatically fetches new posts from the registered feeds.
+- The database uses Sqlite for storage. It has `feeds` and `posts` tables.
+- The scheduler can handle an unlimited number of tasks and uses leveldb for caching and resuming jobs.
 
 ## Hugo export
 
 - Data is automatically exported to the configured Hugo website path.
-- It can export `markdown` files or `json/toml` data files.
-- All fields in the exported files can be customized.
+- It can export data as `markdown` files or `json/toml` data files.
+- You can customize all fields in the exported files.
 - You can define custom output formats by using the `FormatHandler` interface.
-- You can register custom filters and post processing on exported posts to avoid 
-changing the raw data stored in the db.
+- You can register custom filters and post-processing for exported posts to prevent altering the raw data stored in the database.
 - You can force data export using the CLI.
-
 
 ## API
 
-- Uses `gin-gonic`.
-
-- *hugobot* also includes a webserver API that can be used with Hugo [Data
-  Driven Mode][data-driven].
-
-- Insert and query data from the db. This is still a WIP, you can easily 
-  add the missing code on the API side to automate adding/querying data
-  from the DB. 
-
-- An example usage is the automated generation of Bitcoin addresses for new
-  articles on [bitcointechweekly.com][btw-btc]
+- It uses `gin-gonic` as the web framework.
+- *hugobot* also includes a webserver API that can be used with Hugo [Data Driven Mode][data-driven].
+- You can insert and query data from the database. This feature is still a work in progress, but you can easily add the missing code on the API side to automate inserting and querying data from the database.
+- For example, it can be used to automate the generation of Bitcoin addresses for new articles on [bitcointechweekly.com][btw-btc].
 
 ## Other
 
@@ -51,17 +39,15 @@ changing the raw data stored in the db.
 
 ## Sqliteweb interface
 
-- See Docker files
+- See the Docker files for more information.
 
 ## First time usage
 
-- The database is automatically generated the first time you run the program.
-  You can add your feeds straight into the sqlite db using your favorite sqlite GUI
-  or the provided web gui in the docker-compose file.
+- The first time you run the program, it will automatically generate the database. You can add your feeds to the Sqlite database using your preferred Sqlite GUI.
 
 ## Contribution
 
-- PRs welcome, current priority is to add tests.
+- We welcome pull requests. Our current priority is adding tests.
 - Check the [TODO](#TODO) section.
 
 ## TODO:
