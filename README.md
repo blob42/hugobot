@@ -1,4 +1,4 @@
-**MIRRORED FROM**: https://git.blob42.xyz/sp4ke/hugobot
+**MIRRORED FROM**: https://git.blob42.xyz/blob42/hugobot
 
 # HUGOBOT
 
