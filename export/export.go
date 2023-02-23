@@ -8,13 +8,13 @@ import (
 	"strings"
 	"time"
 
-	"git.sp4ke.com/sp4ke/hugobot/v3/config"
-	"git.sp4ke.com/sp4ke/hugobot/v3/encoder"
-	"git.sp4ke.com/sp4ke/hugobot/v3/feeds"
-	"git.sp4ke.com/sp4ke/hugobot/v3/filters"
-	"git.sp4ke.com/sp4ke/hugobot/v3/posts"
-	"git.sp4ke.com/sp4ke/hugobot/v3/types"
-	"git.sp4ke.com/sp4ke/hugobot/v3/utils"
+	"git.blob42.xyz/blob42/hugobot/v3/config"
+	"git.blob42.xyz/blob42/hugobot/v3/encoder"
+	"git.blob42.xyz/blob42/hugobot/v3/feeds"
+	"git.blob42.xyz/blob42/hugobot/v3/filters"
+	"git.blob42.xyz/blob42/hugobot/v3/posts"
+	"git.blob42.xyz/blob42/hugobot/v3/types"
+	"git.blob42.xyz/blob42/hugobot/v3/utils"
 )
 
 var PostMappers []PostMapper

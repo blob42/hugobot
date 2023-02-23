@@ -1,17 +1,17 @@
 package main
 
 import (
-	"git.sp4ke.com/sp4ke/hugobot/v3/export"
-	"git.sp4ke.com/sp4ke/hugobot/v3/feeds"
-	"git.sp4ke.com/sp4ke/hugobot/v3/static"
-	"git.sp4ke.com/sp4ke/hugobot/v3/utils"
+	"git.blob42.xyz/blob42/hugobot/v3/export"
+	"git.blob42.xyz/blob42/hugobot/v3/feeds"
+	"git.blob42.xyz/blob42/hugobot/v3/static"
+	"git.blob42.xyz/blob42/hugobot/v3/utils"
 	"errors"
 	"log"
 	"math"
 	"path"
 	"time"
 
-	gum "git.sp4ke.com/sp4ke/gum.git"
+	gum "git.blob42.xyz/blob42/gum.git"
 	"github.com/syndtr/goleveldb/leveldb"
 
 	"github.com/beeker1121/goque"

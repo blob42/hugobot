@@ -1,9 +1,9 @@
 package export
 
 import (
-	"git.sp4ke.com/sp4ke/hugobot/v3/bitcoin"
-	"git.sp4ke.com/sp4ke/hugobot/v3/config"
-	"git.sp4ke.com/sp4ke/hugobot/v3/encoder"
+	"git.blob42.xyz/blob42/hugobot/v3/bitcoin"
+	"git.blob42.xyz/blob42/hugobot/v3/config"
+	"git.blob42.xyz/blob42/hugobot/v3/encoder"
 	"log"
 	"os"
 	"path/filepath"

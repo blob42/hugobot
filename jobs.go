@@ -1,11 +1,11 @@
 package main
 
 import (
-	"git.sp4ke.com/sp4ke/hugobot/v3/export"
-	"git.sp4ke.com/sp4ke/hugobot/v3/feeds"
-	"git.sp4ke.com/sp4ke/hugobot/v3/handlers"
-	"git.sp4ke.com/sp4ke/hugobot/v3/posts"
-	"git.sp4ke.com/sp4ke/hugobot/v3/utils"
+	"git.blob42.xyz/blob42/hugobot/v3/export"
+	"git.blob42.xyz/blob42/hugobot/v3/feeds"
+	"git.blob42.xyz/blob42/hugobot/v3/handlers"
+	"git.blob42.xyz/blob42/hugobot/v3/posts"
+	"git.blob42.xyz/blob42/hugobot/v3/utils"
 	"bytes"
 	"encoding/gob"
 	"encoding/json"

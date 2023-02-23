@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"git.sp4ke.com/sp4ke/hugobot/v3/db"
+	"git.blob42.xyz/blob42/hugobot/v3/db"
 
 	"github.com/gin-gonic/gin"
 	sqlite3 "github.com/mattn/go-sqlite3"

@@ -1,7 +1,7 @@
 package github
 
 import (
-	"git.sp4ke.com/sp4ke/hugobot/v3/config"
+	"git.blob42.xyz/blob42/hugobot/v3/config"
 	"context"
 
 	"github.com/google/go-github/github"

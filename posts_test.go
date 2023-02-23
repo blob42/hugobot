@@ -1,7 +1,7 @@
 package main
 
 import (
-	"git.sp4ke.com/sp4ke/hugobot/v3/posts"
+	"git.blob42.xyz/blob42/hugobot/v3/posts"
 	"log"
 	"os"
 	"testing"

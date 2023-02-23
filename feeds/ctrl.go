@@ -1,7 +1,7 @@
 package feeds
 
 import (
-	"git.sp4ke.com/sp4ke/hugobot/v3/types"
+	"git.blob42.xyz/blob42/hugobot/v3/types"
 	"log"
 	"net/http"
 	"strconv"

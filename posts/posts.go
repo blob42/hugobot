@@ -1,10 +1,10 @@
 package posts
 
 import (
-	"git.sp4ke.com/sp4ke/hugobot/v3/db"
-	"git.sp4ke.com/sp4ke/hugobot/v3/feeds"
-	"git.sp4ke.com/sp4ke/hugobot/v3/types"
-	"git.sp4ke.com/sp4ke/hugobot/v3/utils"
+	"git.blob42.xyz/blob42/hugobot/v3/db"
+	"git.blob42.xyz/blob42/hugobot/v3/feeds"
+	"git.blob42.xyz/blob42/hugobot/v3/types"
+	"git.blob42.xyz/blob42/hugobot/v3/utils"
 	"errors"
 	"fmt"
 	"log"

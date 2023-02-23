@@ -1,9 +1,9 @@
 package handlers
 
 import (
-	"git.sp4ke.com/sp4ke/hugobot/v3/export"
-	"git.sp4ke.com/sp4ke/hugobot/v3/feeds"
-	"git.sp4ke.com/sp4ke/hugobot/v3/posts"
+	"git.blob42.xyz/blob42/hugobot/v3/export"
+	"git.blob42.xyz/blob42/hugobot/v3/feeds"
+	"git.blob42.xyz/blob42/hugobot/v3/posts"
 	"log"
 	"strings"
 	"time"

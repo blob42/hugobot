@@ -1,13 +1,13 @@
 package main
 
 import (
-	"git.sp4ke.com/sp4ke/hugobot/v3/db"
+	"git.blob42.xyz/blob42/hugobot/v3/db"
 	"log"
 	"os"
 	"syscall"
 	"time"
 
-	gum "git.sp4ke.com/sp4ke/gum.git"
+	gum "git.blob42.xyz/blob42/gum.git"
 )
 
 var (

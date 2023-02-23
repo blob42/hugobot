@@ -1,11 +1,11 @@
 package handlers
 
 import (
-	"git.sp4ke.com/sp4ke/hugobot/v3/feeds"
-	"git.sp4ke.com/sp4ke/hugobot/v3/github"
-	"git.sp4ke.com/sp4ke/hugobot/v3/posts"
-	"git.sp4ke.com/sp4ke/hugobot/v3/static"
-	"git.sp4ke.com/sp4ke/hugobot/v3/utils"
+	"git.blob42.xyz/blob42/hugobot/v3/feeds"
+	"git.blob42.xyz/blob42/hugobot/v3/github"
+	"git.blob42.xyz/blob42/hugobot/v3/posts"
+	"git.blob42.xyz/blob42/hugobot/v3/static"
+	"git.blob42.xyz/blob42/hugobot/v3/utils"
 	"context"
 	"fmt"
 	"log"

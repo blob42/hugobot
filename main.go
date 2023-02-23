@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	"git.sp4ke.com/sp4ke/hugobot/v3/config"
-	"git.sp4ke.com/sp4ke/hugobot/v3/logging"
+	"git.blob42.xyz/blob42/hugobot/v3/config"
+	"git.blob42.xyz/blob42/hugobot/v3/logging"
 
 	"github.com/gobuffalo/flect"
 	altsrc "github.com/urfave/cli/altsrc"
